@@ -1,0 +1,485 @@
+.title,
+.title-extra-section {
+  font-family: "Oswald", sans-serif;
+}
+.main-div {
+  background-image: url(./images/buzred.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(240, 231, 231);
+}
+.prices {
+  margin-top: -34px;
+  border: 1px solid white;
+  font-size: 20px;
+}
+.before {
+  text-decoration-line: line-through;
+  float: left;
+  margin-right: 20px;
+  font-size: 30px;
+}
+.price-sale {
+  color: red;
+  text-decoration-line: none;
+  font-size: 30px;
+}
+.item-ref {
+  color: rgb(117, 115, 115);
+}
+/* styles of classification starts*/
+.classification-form {
+  width: 250px;
+}
+.classification-form .labels {
+  font-size: 20px;
+}
+.labels {
+  color: grey;
+}
+input[type="radio"] {
+  display: none;
+}
+.classification {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+.labels:hover {
+  color: red;
+}
+
+.labels:hover ~ .labels {
+  color: red;
+}
+input[type="radio"]:checked ~ .labels {
+  color: red;
+}
+/*styling social media*/
+.social-media {
+  width: 200px;
+}
+.social-media img {
+  width: 50px;
+  margin: 5px;
+  cursor: pointer;
+}
+.social-media img:hover {
+  opacity: 0.8;
+}
+
+/*sizes form */
+
+.sizes-div .label-sizes {
+  position: relative;
+}
+input[type="checkbox"]:checked + .label-sizes {
+  color: brown;
+}
+.sizes-div p {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+.color-div {
+  font-weight: bold;
+}
+
+/*button Add to car*/
+.button-add-car {
+  width: 150px;
+}
+.details p {
+  font-family: "Open Sans", sans-serif;
+}
+.details h2 {
+  font-family: "Oswald", sans-serif;
+}
+
+.button1 {
+  width: 250px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: rgb(74, 207, 185);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  font-family: "Oswald", sans-serif;
+}
+.button-add-car:hover {
+  opacity: 0.8;
+}
+/*creating circule Colors*/
+.color-div p {
+  font-family: "Oswald", sans-serif;
+}
+.options-color {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+.color1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: red;
+}
+.color2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #00eb00;
+}
+.color3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #00c6f0;
+}
+.color4 {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: yellow;
+}
+.text-items {
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+.second-price {
+  background-color: rgb(74, 207, 185);
+  height: 25px;
+  opacity: 0.7;
+  margin-top: -45px;
+}
+.text-to-share {
+  width: 150px;
+  color: #3c589e;
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+  .main-div {
+    width: 100%;
+    text-align: center;
+    height: 400px;
+    margin-left: -5px;
+  }
+
+  .item-info {
+    width: 80%;
+    padding-left: 40px;
+  }
+  .form-rate {
+    margin-top: -50px;
+  }
+
+  .classification {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-left: 15px;
+  }
+  .sizes-div {
+    margin-top: 30px;
+  }
+  .sizes-div p {
+    display: inline;
+  }
+
+  .sizes-div form {
+    margin-top: 30px;
+  }
+  .color-div {
+    margin-top: 30px;
+  }
+  .color-div p {
+    display: inline;
+  }
+  .button-add-car {
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  .title-extra-section {
+    text-align: center;
+  }
+  .items-content {
+    text-align: center;
+  }
+  /*slider to show items*/
+
+  .img-slider img {
+    width: 80%;
+  }
+  #prev {
+    position: absolute;
+    left: 15px;
+    top: 1440px;
+    font-size: 30px;
+  }
+  #next {
+    position: absolute;
+    right: 0px;
+    top: 1440px;
+    font-size: 30px;
+  }
+  .img-slider {
+    display: none;
+  }
+  .text-to-share {
+    display: none;
+  }
+  #x-icon {
+    display: none;
+  }
+  .extra-price {
+    display: none;
+  }
+}
+@media (min-width: 760px) {
+  .title {
+    position: absolute;
+    font-size: 26px;
+    width: 400px;
+    top: 50px;
+  }
+  .main-div {
+    margin-top: 120px;
+    width: 50%;
+    height: 450px;
+    background-size: contain;
+  }
+
+  .item-info {
+    width: 50%;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+  }
+  .prices,
+  .item-ref {
+    margin-left: 20px;
+    width: 90%;
+  }
+  .classification {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+  }
+  .social-media {
+    position: absolute;
+    top: 40px;
+    left: -380px;
+    z-index: 1;
+  }
+  .details {
+    width: 75%;
+    padding-left: 20px;
+  }
+  .details h2 {
+    font-size: 18px;
+  }
+  .sizes-div {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .sizes-div p {
+    float: left;
+    margin-right: 20px;
+    margin-top: 3px;
+  }
+  .sizes-div p:nth-child(1) {
+    display: none;
+  }
+  .sizes-div form {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  .color-div {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .color-div p {
+    float: left;
+    margin-right: 20px;
+  }
+  .color-div p:nth-child(1) {
+    display: none;
+  }
+  .button-add-car {
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+  .title-extra-section {
+    width: 100%;
+    position: absolute;
+    left: -200px;
+    text-align: center;
+    top: 600px;
+  }
+  .items-content {
+    width: 750px;
+    position: absolute;
+    right: 10px;
+    top: 630px;
+  }
+  .img-slider {
+    margin-top: 50px;
+    float: left;
+    margin-left: 50px;
+  }
+
+  .img-slider img {
+    width: 300px;
+    padding-top: 70px;
+  }
+  .second-price {
+    width: 300px;
+    text-align: center;
+  }
+  #prev,
+  #next {
+    display: none;
+  }
+  .text-items {
+    width: 100%;
+    text-align: center;
+  }
+  .text-to-share {
+    display: none;
+  }
+  #x-icon {
+    display: none;
+  }
+  .extra-price {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .title {
+    position: absolute;
+    right: 211px;
+    top: 10px;
+  }
+  .item-info {
+    margin-top: -20px;
+  }
+  .main-div {
+    margin-top: 30px;
+    height: 542px;
+  }
+  .main-div img {
+    margin-top: -0px;
+    height: 542px;
+  }
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    width: 300px;
+    margin-left: 420px;
+    margin-top: 110px;
+  }
+
+  .text-to-share {
+    display: block;
+    margin-left: 140px;
+    margin-top: -60px;
+  }
+  #x-icon {
+    display: block;
+  }
+  #x-icon img {
+    width: 30px;
+    padding-top: 10px;
+    opacity: 1;
+  }
+  #x-icon img:hover {
+    width: 32px;
+  }
+  .sizes-div {
+    margin-top: 30px;
+  }
+  .sizes-div p {
+    margin-top: -4px;
+  }
+  .color-div {
+    margin-top: 10px;
+  }
+  .button-add-car {
+    margin-top: 22px;
+  }
+
+  .items-content {
+    width: 1280px;
+    position: absolute;
+    margin-top: 50px;
+  }
+  .title-extra-section {
+    left: -800px;
+  }
+  .slider {
+    width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  .img-slider img {
+    margin-left: 50px;
+  }
+  .second-price {
+    width: 50px;
+    margin-top: -80px;
+    margin-left: 300px;
+    background-color: rgb(74, 207, 185);
+    opacity: 0.9;
+  }
+  .text-items {
+    margin-left: 20px;
+    margin-top: 80px;
+  }
+  .extra-price {
+    display: block;
+    margin-top: -55px;
+    margin-left: 180px;
+    background-color: rgb(74, 207, 185);
+    z-index: 1;
+    width: 150px;
+    height: 20px;
+    position: absolute;
+  }
+  .before2 {
+    text-decoration-line: line-through;
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+  .sale2 {
+    color: red;
+    margin-left: 70px;
+    margin-top: -35px;
+  }
+  #price-opcional {
+    display: none;
+  }
+  #text-it p:nth-child(1) {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+}
